@@ -1,7 +1,6 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import { Button } from '@mui/material';
-import logo from './logo.svg';
 import './App.css';
 
 const App = () => {
@@ -11,7 +10,6 @@ const App = () => {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
         <p>
           Happy Valentine's Day!
           Welcome to my little puzzle present.
