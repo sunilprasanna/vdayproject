@@ -34,18 +34,6 @@ export TEMPLATE="release_pull_request_template.md"
 export LABEL="release"
 export TARGET_BRANCH="release"
 
-# Assign to some engineers
-export ASSIGNEES="HumbertoL,breeyae-hogue,sunilprasanna"
-
-# Open Github straight to Create Pull request page. Compare against release
-export URL="https://github.com/callemall/cea-framework/compare/${TARGET_BRANCH}...${BRANCH_NAME}?template=${TEMPLATE}&labels=${LABEL}&assignees=${ASSIGNEES}&quick_pull=1"
-
 echo "Opening Pull Request on Github..."
-
-# Linux and MacOS
-open "${URL}" &>/dev/null
-
-# Windows
-start "" "${URL}"  &>/dev/null
 
 exit 0
