@@ -75,7 +75,12 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "all-aboard": "sh ./release-branch.sh"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sunilprasanna/vdayproject.git"
   },
   "eslintConfig": {
     "extends": [
