@@ -1,18 +1,11 @@
-name: Update Version on Release
-
+name: Pull Request Action
 on:
-  release:
-    types:
-      - created
+  push:
+    branches:
+      - feature/*
 
 jobs:
-  update_version:
-     runs-on: ubuntu-latest
-     steps:
-      - uses: actions/checkout@v2
-      - command: yarn all-aboard
-
-   create-pull-request:
+  create-pull-request:
     runs-on: ubuntu-latest
     steps:
       - name: Check out repository code
