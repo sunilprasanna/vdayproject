@@ -21,6 +21,7 @@ jobs:
           command: all-aboard
 
   create-pull-request:
+    permissions: write-all
     runs-on: ubuntu-latest
     steps:
       - name: Check out repository code
